@@ -1,0 +1,13 @@
+<h1>
+{% if title %}
+    {{ title }}
+{% else %}
+    Default Title
+{% endif %}
+</h1>
+<h2>Post Details</h2>
+<div>  
+    <h3>{{ post.title }}</h3>
+    <p>{{ post.content }}</p>
+    <p><strong>Author:</strong> {{ post.author }}</p>
+</div>
